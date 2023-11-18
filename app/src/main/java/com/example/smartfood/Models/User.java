@@ -35,15 +35,15 @@ public class User {
         this.registerDate = registerDate;
     }
 
-    public void setRoles(String[] roles) {
+    public void setRoles(String roles) {
         this.roles = roles;
     }
 
-    public String[] getRoles() {
+    public String getRoles() {
         return roles;
     }
 
-    public User(String id, String email, String name, Date registerDate, String[] roles) {
+    public User(String id, String email, String name, Date registerDate, String roles) {
         this.id = id;
         this.email = email;
         this.name = name;
@@ -55,5 +55,5 @@ public class User {
     private String email;
     private String name;
     private Date registerDate;
-    private String[] roles;
+    private String roles;
 }

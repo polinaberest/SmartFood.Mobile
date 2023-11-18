@@ -1,5 +1,5 @@
 package com.example.smartfood.Constants;
 
 public class Constants {
-    public static final String BASE_URL = "https://localhost:7065";
+    public static final String BASE_URL = "http://10.0.2.2:5106";
 }

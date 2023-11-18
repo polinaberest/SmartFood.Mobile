@@ -44,7 +44,7 @@ public class AuthService {
         RequestBody body = RequestBody.create(json, JSON);
 
         Request request = new Request.Builder()
-                .url(Constants.BASE_URL + "/api/auth/login")
+                .url(Constants.BASE_URL + "/api/Auth/login")
                 .post(body)
                 .build();
 

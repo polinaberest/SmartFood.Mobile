@@ -39,7 +39,7 @@ public class AuthInterceptor implements Interceptor {
             if (refreshToken != null) {
                 // Synchronize to make sure only one request refreshes the token
                 synchronized (this) {
-                    String newToken = authService.refreshToken(token, refreshToken);
+                    String newToken = authService.refreshToken(token, refreshToken).getRefreshToken();
                     if (newToken != null) {
                         requestBuilder.header("Authorization", "Bearer " + newToken);
                         authRequest = requestBuilder.build();

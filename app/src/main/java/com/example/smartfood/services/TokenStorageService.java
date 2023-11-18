@@ -6,9 +6,15 @@ import android.content.SharedPreferences;
 import com.auth0.android.jwt.Claim;
 import com.auth0.android.jwt.JWT;
 import com.example.smartfood.Models.User;
+import com.example.smartfood.Utils.DateHelper;
 import com.google.gson.Gson;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.Date;
+import java.util.Locale;
 
 public class TokenStorageService {
     private static final String TOKEN_KEY = "auth-token";
@@ -43,10 +49,10 @@ public class TokenStorageService {
         Claim rolesClaim = jwt.getClaim("roles");
 
         User user = new User(idClaim.asString(),
-                            emailClaim.asString(),
-                            nameClaim.asString(),
-                            registerDateClaim.asDate(),
-                            rolesClaim.asArray(String.class));
+                emailClaim.asString(),
+                nameClaim.asString(),
+                DateHelper.ParseFromUTCString(registerDateClaim.asString()),
+                rolesClaim.asString());
 
         return user;
     }

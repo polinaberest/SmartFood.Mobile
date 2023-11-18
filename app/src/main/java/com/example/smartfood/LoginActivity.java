@@ -29,8 +29,11 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
 
         loginButton = (Button) findViewById(R.id.login_btn);
-        emailInput = (EditText) findViewById(R.id.login_password_input);
+        emailInput = (EditText) findViewById(R.id.login_email_input);
         passwordInput = (EditText) findViewById(R.id.login_password_input);
+
+        emailInput.setText("pamapolya@gmail.com");
+        passwordInput.setText("Admin@123");
 
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
