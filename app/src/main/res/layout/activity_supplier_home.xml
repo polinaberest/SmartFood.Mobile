@@ -16,7 +16,7 @@
         android:layout_centerHorizontal="true"
         android:fontFamily="@font/comfortaa"
         android:layout_marginTop="25dp"
-        android:text="USER"
+        android:text="SUPPLIER"
         android:textAlignment="center"
         android:textColor="#E1000000"
         android:textSize="25sp" />

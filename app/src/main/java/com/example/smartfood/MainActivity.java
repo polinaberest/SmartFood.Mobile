@@ -9,7 +9,7 @@ import android.view.View;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
-    private Button joinButton, loginButton;
+    private Button signupButton, loginButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,12 +21,22 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         loginButton = (Button) findViewById(R.id.main_login_btn);
+        signupButton = (Button) findViewById(R.id.main_signup_btn);
 
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent loginIntent = new Intent(MainActivity.this, LoginActivity.class);
                 startActivity(loginIntent);
+                finish();
+            }
+        });
+
+        signupButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent registerIntent = new Intent(MainActivity.this, RegisterActivity.class);
+                startActivity(registerIntent);
                 finish();
             }
         });

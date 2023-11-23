@@ -5,8 +5,19 @@
     <string name="prompt_password">Password</string>
     <string name="action_sign_in">Sign in or register</string>
     <string name="action_sign_in_short">Sign in</string>
-    <string name="welcome">"Welcome !"</string>
+    <string name="welcome_message">Welcome!</string>
     <string name="invalid_username">Not a valid username</string>
     <string name="invalid_password">Password must be >5 characters</string>
-    <string name="login_failed">"Login failed"</string>
+    <string name="login_failed">Login failed</string>
+    <string name="universal_fail">Oops! Something went wrong</string>
+    <string name="validation_fail">Incorrect input. Try again</string>
+
+    <string name="motto">Stay Smart even eating your lunch!</string>
+    <string name="sign_up">Sign up</string>
+    <string name="log_in">Log into accaunt</string>
+
+    <string name="enter_email">Enter your email</string>
+    <string name="enter_password">Enter your password</string>
+    <string name="enter_name">Enter your name</string>
+    <string name="sign_up_description">Fill in the form to take advantage of SmartFood</string>
 </resources>

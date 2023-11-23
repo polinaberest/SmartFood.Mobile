@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">SmartFood</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome_message">"Вітаємо!"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">Login failed</string>
+    <string name="universal_fail">Упс! Щось пішло не так</string>
+    <string name="validation_fail">Уведення некоректне!</string>
+
+    <string name="motto">Залишайся Smart навіть жуючи ланч!</string>
+    <string name="sign_up">Зареєструватися</string>
+    <string name="log_in">Увійти в акаунт</string>
+
+    <string name="enter_email">Уведіть email</string>
+    <string name="enter_password">Уведіть пароль</string>
+    <string name="enter_name">Уведіть ваше повне ім\'я</string>
+    <string name="sign_up_description">Заповніть форму для реєстрації в системі SmartFood</string>
+</resources>

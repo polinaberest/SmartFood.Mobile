@@ -9,6 +9,8 @@ import com.example.smartfood.Constants.Constants;
 import com.example.smartfood.Models.User;
 import com.example.smartfood.RequestModels.LoginRequest;
 import com.example.smartfood.RequestModels.LoginResponse;
+import com.example.smartfood.RequestModels.RegisterRequest;
+import com.example.smartfood.RequestModels.RegisterResponse;
 import com.google.gson.Gson;
 
 import java.io.IOException;
@@ -59,6 +61,32 @@ public class AuthService {
                 tokenStorage.saveRefreshToken(loginResponse.getRefreshToken());
 
                 return loginResponse;
+            }
+        }
+        catch (IOException e) {
+            return null;
+        }
+
+        return null;
+    }
+
+    public RegisterResponse register(RegisterRequest registerRequest) {
+        String json = gson.toJson(registerRequest);
+        RequestBody body = RequestBody.create(json, JSON);
+
+        Request request = new Request.Builder()
+                .url(Constants.BASE_URL + "/api/Auth/register")
+                .post(body)
+                .build();
+
+        try {
+            Response response = client.newCall(request).execute();
+
+            if (response.isSuccessful()) {
+                String responseBody = response.body().string();
+
+                RegisterResponse registerResponse = gson.fromJson(responseBody, RegisterResponse.class);
+                return registerResponse;
             }
         }
         catch (IOException e) {
