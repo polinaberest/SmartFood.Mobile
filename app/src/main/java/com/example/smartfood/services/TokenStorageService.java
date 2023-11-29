@@ -15,6 +15,7 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Date;
 import java.util.Locale;
+import java.util.UUID;
 
 public class TokenStorageService {
     private static final String TOKEN_KEY = "auth-token";
@@ -48,7 +49,7 @@ public class TokenStorageService {
         Claim registerDateClaim = jwt.getClaim("registerDate");
         Claim rolesClaim = jwt.getClaim("roles");
 
-        User user = new User(idClaim.asString(),
+        User user = new User(UUID.fromString(idClaim.asString()),
                 emailClaim.asString(),
                 nameClaim.asString(),
                 DateHelper.ParseFromUTCString(registerDateClaim.asString()),

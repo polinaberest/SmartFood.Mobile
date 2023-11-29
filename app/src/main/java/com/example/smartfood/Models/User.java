@@ -1,13 +1,14 @@
 package com.example.smartfood.Models;
 
 import java.util.Date;
+import java.util.UUID;
 
 public class User {
-    public String getId() {
+    public UUID getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(UUID id) {
         this.id = id;
     }
 
@@ -43,7 +44,7 @@ public class User {
         return roles;
     }
 
-    public User(String id, String email, String name, Date registerDate, String roles) {
+    public User(UUID id, String email, String name, Date registerDate, String roles) {
         this.id = id;
         this.email = email;
         this.name = name;
@@ -51,7 +52,7 @@ public class User {
         this.roles = roles;
     }
 
-    private String id;
+    private UUID id;
     private String email;
     private String name;
     private Date registerDate;

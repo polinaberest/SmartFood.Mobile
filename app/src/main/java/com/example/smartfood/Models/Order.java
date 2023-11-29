@@ -1,5 +1,7 @@
 package com.example.smartfood.Models;
 
+import androidx.annotation.NonNull;
+
 import com.example.smartfood.Constants.Status;
 
 import java.util.UUID;
@@ -14,6 +16,13 @@ public class Order {
         this.orderedDish = orderedDish;
         this.totalPrice = totalPrice;
         this.status = status;
+    }
+
+    public Order(UUID customerId, int count, UUID orderedDishId, double totalPrice) {
+        this.customerId = customerId;
+        this.count = count;
+        this.orderedDishId = orderedDishId;
+        this.totalPrice = totalPrice;
     }
 
     public UUID getId() {
@@ -88,4 +97,14 @@ public class Order {
     private StoredDish orderedDish;
     private double totalPrice;
     private Status status;
+
+    @NonNull
+    @Override
+    public String toString() {
+        return orderedDish.getDish().getName()
+                + "\n" + orderedDish.getDish().getPrice()
+                + " x " + count
+                + " = " + totalPrice
+                + "\n(" + orderedDish.getFridge().getPlacementDescription() + ")";
+    }
 }

@@ -16,6 +16,15 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
+            android:name=".UserActivities.PlaceOrderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UserActivities.MakeOrderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UserActivities.RecommendationsActivity"
+            android:exported="false" />
+        <activity
             android:name=".SupplierActivities.SupplierHomeActivity"
             android:exported="false" />
         <activity

@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".UserActivities.UserHomeActivity">
+    tools:context=".UserActivities.RecommendationsActivity">
 
     <com.google.android.material.appbar.AppBarLayout
-        android:id="@+id/app_bar_layout_home"
+        android:id="@+id/app_bar_layout_recommendations"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:liftOnScroll="true"
@@ -18,7 +18,7 @@
             android:layout_height="match_parent">
 
             <androidx.appcompat.widget.Toolbar
-                android:id="@+id/home_toolbar"
+                android:id="@+id/recommendations_toolbar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="15dp"
@@ -32,29 +32,19 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/comfortaa"
-                    android:text="@string/header_user_orders"
+                    android:text="@string/header_user_recommendations"
                     android:textColor="@color/white"
                     android:textSize="27sp" />
             </androidx.appcompat.widget.Toolbar>
 
             <ImageView
-                android:id="@+id/logout_btn"
+                android:id="@+id/back_btn"
                 android:layout_width="65dp"
                 android:layout_height="50dp"
-                app:layout_constraintEnd_toEndOf="@id/home_toolbar"
-                app:layout_constraintBottom_toBottomOf="@id/home_toolbar"
-                android:layout_marginBottom="10dp"
-                app:srcCompat="@drawable/logout_btn_icon"
-                />
-
-            <ImageView
-                android:id="@+id/recommendations_btn"
-                android:layout_width="55dp"
-                android:layout_height="55dp"
-                app:layout_constraintEnd_toStartOf="@id/logout_btn"
-                app:layout_constraintBottom_toBottomOf="@id/home_toolbar"
-                android:layout_marginBottom="8dp"
-                app:srcCompat="@drawable/recommendation"
+                app:layout_constraintEnd_toEndOf="@id/recommendations_toolbar"
+                app:layout_constraintBottom_toBottomOf="@id/recommendations_toolbar"
+                android:layout_marginBottom="15dp"
+                app:srcCompat="@drawable/back"
                 />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -63,14 +53,14 @@
 
 
     <TextView
-        android:id="@+id/no_orders_made"
+        android:id="@+id/no_recommendations_received"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/app_bar_layout_home"
+        android:layout_below="@id/app_bar_layout_recommendations"
         android:layout_marginHorizontal="20dp"
         android:fontFamily="@font/comfortaa"
         android:paddingVertical="20dp"
-        android:text="@string/no_orders"
+        android:text="@string/no_recommendations"
         android:textColor="#5E5E5E"
         android:textSize="20sp"
         android:visibility="gone" />
@@ -78,26 +68,13 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/app_bar_layout_home">
+        android:layout_below="@id/app_bar_layout_recommendations">
 
         <LinearLayout
-            android:id="@+id/orders_layout"
+            android:id="@+id/recommendations_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
         </LinearLayout>
     </ScrollView>
-
-    <ImageView
-        android:id="@+id/make_order_btn"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="15dp"
-        android:layout_marginTop="15dp"
-        android:layout_marginEnd="15dp"
-        android:layout_marginBottom="15dp"
-        android:src="@drawable/plus" />
-
 </RelativeLayout>

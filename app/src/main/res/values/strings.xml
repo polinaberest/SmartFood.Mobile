@@ -20,4 +20,26 @@
     <string name="enter_password">Enter your password</string>
     <string name="enter_name">Enter your name</string>
     <string name="sign_up_description">Fill in the form to take advantage of SmartFood</string>
+
+    <string name="header_user_orders">My orders</string>
+    <string name="header_user_recommendations">Recommended</string>
+
+    <string name="no_orders">You have got no orders yet!</string>
+    <string name="no_recommendations">You have got no recommendations yet!</string>
+    <string name="order_title">Order info</string>
+    <string name="recommendation_title">Recommended order</string>
+    <string name="about_order">Your order </string>
+    <string name="order_status">Order status: </string>
+    <string name="currency">UAH</string>
+    <string name="amount">items</string>
+    <string name="pick_up">Pick up</string>
+    <string name="repeat_order">Repeat!</string>
+    <string name="close">Close</string>
+
+    <string name="succesful_dish_pick_up">Enjoy your meal!</string>
+    <string name="failed_dish_pick_up">Something went wrong while opening the fridge. Try again!</string>
+
+    <string name="succesful_order">Order placed succesfully!</string>
+    <string name="failed_order">Something went wrong. Try again!</string>
+    <string name="pick_up_in_fridge">Pick up in fridge:</string>
 </resources>

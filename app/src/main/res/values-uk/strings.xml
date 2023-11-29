@@ -20,4 +20,26 @@
     <string name="enter_password">Уведіть пароль</string>
     <string name="enter_name">Уведіть ваше повне ім\'я</string>
     <string name="sign_up_description">Заповніть форму для реєстрації в системі SmartFood</string>
+
+    <string name="header_user_orders">Мої замовлення</string>
+    <string name="header_user_recommendations">Рекомендації</string>
+
+    <string name="no_orders">Ви ще не зробили жодного замовлення!</string>
+    <string name="no_recommendations">Наразі для Вас немає рекомендацій. Час спробувати щось новеньке!</string>
+    <string name="about_order">Ваше замовлення </string>
+    <string name="repeat_order">Повторити замовлення!</string>
+    <string name="order_status">Статус замовлення: </string>
+    <string name="currency">грн</string>
+    <string name="amount">шт.</string>
+    <string name="order_title">Про замовлення</string>
+    <string name="recommendation_title">Рекомендуємо замовити</string>
+    <string name="pick_up">Забрати</string>
+    <string name="close">Закрити</string>
+
+    <string name="succesful_dish_pick_up">Смачного!</string>
+    <string name="failed_dish_pick_up">Щось пішло не так при відкритті холодильника. Спробуй ще!</string>
+
+    <string name="succesful_order">Замовлення прийняте!</string>
+    <string name="failed_order">Щось пішло не так. Спробуй ще!</string>
+    <string name="pick_up_in_fridge">Забери в холодильнику:</string>
 </resources>

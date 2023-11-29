@@ -34,8 +34,8 @@ public class LoginActivity extends AppCompatActivity {
         emailInput = (EditText) findViewById(R.id.login_email_input);
         passwordInput = (EditText) findViewById(R.id.login_password_input);
 
-        emailInput.setText("pamapolya@gmail.com");
-        passwordInput.setText("Admin@123");
+        emailInput.setText("eater@gmail.com");
+        passwordInput.setText("Ja17nuary");
 
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
