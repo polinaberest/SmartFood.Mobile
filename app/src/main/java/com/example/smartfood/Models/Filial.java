@@ -1,5 +1,7 @@
 package com.example.smartfood.Models;
 
+import androidx.annotation.NonNull;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
@@ -77,5 +79,11 @@ public class Filial {
 
     public void setDeleted(boolean deleted) {
         isDeleted = deleted;
+    }
+
+    @NonNull
+    @Override
+    public String toString() {
+        return getName() + ", " + getOwnerOrganization().getName();
     }
 }

@@ -33,13 +33,25 @@
     <string name="amount">шт.</string>
     <string name="order_title">Про замовлення</string>
     <string name="recommendation_title">Рекомендуємо замовити</string>
+    <string name="supply_title">Необхідно поповнити запаси</string>
+    <string name="make_delivery_report">Доставлено!</string>
     <string name="pick_up">Забрати</string>
     <string name="close">Закрити</string>
 
     <string name="succesful_dish_pick_up">Смачного!</string>
     <string name="failed_dish_pick_up">Щось пішло не так при відкритті холодильника. Спробуй ще!</string>
 
+    <string name="header_add_order">Нове замовлення</string>
+    <string name="select_filial">Оберіть ваш офіс</string>
+    <string name="select_dish">Оберіть страву для замовлення</string>
+    <string name="input_count">Кількість (шт.):</string>
+    <string name="total">Вартість замовлення:</string>
+    <string name="make_order">Замовити!</string>
     <string name="succesful_order">Замовлення прийняте!</string>
     <string name="failed_order">Щось пішло не так. Спробуй ще!</string>
     <string name="pick_up_in_fridge">Забери в холодильнику:</string>
+
+    <string name="header_supplier_home">Необхідно доставити</string>
+    <string name="fridge_placement">Розташування холодильника:</string>
+    <string name="no_supplies_needed">Наразі немає у всіх холодильниках, які ви обслуговуєте, достатні запаси страв.</string>
 </resources>

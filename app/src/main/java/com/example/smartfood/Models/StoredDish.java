@@ -1,5 +1,7 @@
 package com.example.smartfood.Models;
 
+import androidx.annotation.NonNull;
+
 import java.util.UUID;
 
 public class StoredDish {
@@ -58,6 +60,18 @@ public class StoredDish {
 
     public void setFridge(Fridge fridge) {
         this.fridge = fridge;
+    }
+
+    @NonNull
+    @Override
+    public String toString() {
+        return getDish().getName() + ", " + getFridge().getPlacementDescription();
+    }
+
+    public String toStringForSupplier() {
+        return getDish().getName()
+                + "\n(" + getFridge().getFilial().getName()
+                + ", " + getFridge().getFilial().getAddress() + ")";
     }
 
     private UUID id;

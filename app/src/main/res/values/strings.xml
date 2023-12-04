@@ -28,10 +28,12 @@
     <string name="no_recommendations">You have got no recommendations yet!</string>
     <string name="order_title">Order info</string>
     <string name="recommendation_title">Recommended order</string>
+    <string name="supply_title">Needs to be delivered</string>
     <string name="about_order">Your order </string>
     <string name="order_status">Order status: </string>
     <string name="currency">UAH</string>
     <string name="amount">items</string>
+    <string name="make_delivery_report">Delivered!</string>
     <string name="pick_up">Pick up</string>
     <string name="repeat_order">Repeat!</string>
     <string name="close">Close</string>
@@ -39,7 +41,17 @@
     <string name="succesful_dish_pick_up">Enjoy your meal!</string>
     <string name="failed_dish_pick_up">Something went wrong while opening the fridge. Try again!</string>
 
+    <string name="header_add_order">Place order</string>
+    <string name="select_filial">Select company filial</string>
+    <string name="select_dish">Select a dish to order</string>
+    <string name="input_count">Amount (in items):</string>
+    <string name="total">Order total:</string>
+    <string name="make_order">Order now!</string>
     <string name="succesful_order">Order placed succesfully!</string>
     <string name="failed_order">Something went wrong. Try again!</string>
     <string name="pick_up_in_fridge">Pick up in fridge:</string>
+
+    <string name="header_supplier_home">Supplies needed</string>
+    <string name="fridge_placement">Fridge placement description: </string>
+    <string name="no_supplies_needed">There are currently no fridges, where the supply is needed.</string>
 </resources>
